@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-mail Notification</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h1,
+    h2 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    p,
+    span {
+      font-family: 'Roboto', sans-serif;
+
+    }
+
+    :root {
+      --background-container: #f0f0f0;
+      --background-response-box: #fff;
+      --text-default: #636e72;
+    }
+
+    body {
+      background: var(--background-container);
+    }
+
+    .container {
+
+      max-width: 37.5rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: .5rem;
+      border-radius: 4px;
+    }
+
+    .logo-box {
+      margin-top: 2.5rem;
+      margin-bottom: 2rem;
+      padding: 1rem;
+    }
+
+    .logo-box h1 {
+      line-height: 2.43rem;
+      margin-top: 1.5rem;
+      letter-spacing: 2px;
+    }
+
+    .logo-box img {
+      width: 5rem;
+      margin: 0 auto;
+    }
+
+    .response-box {
+      display: flex;
+      flex-direction: column;
+      background: var(--background-response-box);
+      border-radius: 4px;
+      width: 25rem;
+      height: 8rem;
+      padding: 1rem;
+
+    }
+
+    .response-box p {
+      font-size: 1.125rem;
+      align-self: center;
+      color: var(--text-default);
+      margin-bottom: 2.5rem;
+    }
+
+    .response-box h2 {
+      font-size: 2rem;
+      letter-spacing: 1rem;
+      align-self: center;
+    }
+
+    .alert-box {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      width: 25rem;
+    }
+
+    .alert-box p {
+      font-size: .95rem;
+      color: var(--text-default)
+    }
+
+    .midia-box {
+      width: 100%;
+      max-width: 25rem;
+      padding: 1rem;
+    }
+
+    .midia-box img {
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+
+    .nav-midias {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .nav-midias img {
+      width: 3rem;
+    }
+
+    .terms-box {
+      max-width: 25rem;
+      width: 100%;
+      margin-bottom: 1rem;
+
+    }
+
+    .nav-terms {
+      display: flex;
+      max-width: 25rem;
+      flex-wrap: wrap;
+      gap: .3rem;
+      justify-content: center;
+      text-transform: uppercase;
+      list-style: inside;
+    }
+
+    .nav-terms li a {
+      color: var(--text-default);
+    }
+
+    .nav-terms li::marker {
+
+      color: var(--text-default);
+
+    }
+
+    .nav-terms li:first-child {
+      list-style: none;
+    }
+
+    .regulations-box {
+      margin: 0 auto;
+      max-width: 25rem;
+    }
+
+    .regulations-box span {
+      display: block;
+      margin-bottom: 2rem;
+      color: var(--text-default);
+      font-size: .7rem;
+      text-align: center;
+    }
+
+    @media(max-width: 450px) {
+      .response-box {
+        padding: 1rem;
+        width: 20rem;
+      }
+    }
+
+    @media(max-width: 350px) {
+      .logo-box h1 {
+        font-size: 1.85rem;
+      }
+
+      .alert-box {
+        padding: .5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo-box">
+      <img src="https://i.pinimg.com/originals/90/6d/23/906d231cbaff55c77fb97191592e1c76.png" alt="logo riot">
+      <h1>Código de login</h1>
+    </div>
+    <div class="response-box">
+      <p>Aqui está o seu código de aprovação de login:</p>
+      <h2>123456</h2>
+    </div>
+    <div class="alert-box">
+      <p>Se você não solicitou essa alteração, mude sua senha imediatamente para evitar futuros acessos não autorizados. Leia o artigo "Como proteger sua conta" (https://support-leagueoflegends.riotgames.com/hc/pt-br/articles/4402981557267-Como-proteger-sua-conta) para ver dicas de senhas seguras.</p>
+    </div>
+
+    <div class="midia-box">
+      <img src="https://ci3.googleusercontent.com/proxy/dDiKy6oCa4Y6Q5OVWwfVn-_XRnJAe9CvnknevX1OmFyo81W4m5FBiB-ieixjvUnjIhSlfkaN-CAZa--ASRiVKooD3f4QWCe8PozRTJYwFP-lGIRHTXI9OJoEv-ycCs1uNk4nFD0JVYRFXKGueE0QouQQ2bq9ioYk5GUhyCJYp3Uch0bV=s0-d-e1-ft#http://cdn.mcauto-images-production.sendgrid.net/6c20475da3226ec8/c0f904bf-0eba-43d5-88cb-77291947f631/141x40.png" alt="logo">
+      <nav>
+        <ul class="nav-midias">
+          <li><a href="#"><img src="https://ci3.googleusercontent.com/proxy/rcYs7Ll_uIUjD9WNGmKlTNhb4cXQbPY74SRuVSHR0xo6dMVHuuIo7OGERmIgiJTAgbN-wWamF2Y2Bx4UrkFJxyZCKPoVbQ5gmosM9fK-gqAoX3OcqQ3oCa3ZneHf2yYEnA=s0-d-e1-ft#https://lolstatic-a.akamaihd.net/email-marketing/betabuddies/facebook-logo.png" alt=""></a></li>
+          <li><a href="#"><img src="https://ci3.googleusercontent.com/proxy/D4hP2lnb57fnEsNaXmx5rescxZFQefhk2d2t4kzCJoWDHwFwF5C2NZ_ouWvf3WRSl7ggI0n-D2YsrEiVQfYHff-4gSXVL2_Hfc-m_6vPnKHEpONs0cw4nMDN49luRFWZock=s0-d-e1-ft#https://lolstatic-a.akamaihd.net/email-marketing/betabuddies/instagram-logo.png" alt=""></a></li>
+          <li><a href="#"><img src="https://ci6.googleusercontent.com/proxy/h-EejfrBWXVSwoMk2OPjry1O9ZHk0T7bVDKaXDkI5M07QXKudBg2eFTT1u5Du3nO-WD_C31SBXgSXe4BgndKAERMA95VnXRyHSyNNGKMIotYO6GP1-ExvcH2zliH-Oj7=s0-d-e1-ft#https://lolstatic-a.akamaihd.net/email-marketing/betabuddies/youtube-logo.png" alt=""></a></li>
+          <li><a href="#"><img src="https://ci5.googleusercontent.com/proxy/rZKdKE_oYIJ9VcKSnc7yPwsQ6KzeuZaiu2IY21TgvBQE7Qi6f9GyBgNMUBACMHuRJriRxDhokEws9toSnB23QH2uhDrLMAbqp9woQO1XsfGhYSLnuhzfoVJVFyXQjQh1=s0-d-e1-ft#https://lolstatic-a.akamaihd.net/email-marketing/betabuddies/twitter-logo.png" alt=""></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="terms-box">
+      <nav>
+        <ul class="nav-terms">
+          <li><a href="#">Aviso de Privacidade</a></li>
+          <li><a href="#">Suporte</a></li>
+          <li><a href="#">Termos de Serviço</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <div class="regulations-box">
+      <span>Este é um e-mail de notificação de serviço.</span>
+      <span>Riot Games, Inc., 12333 West Olympic Blvd. Los Angeles, CA, 90064, Estados Unidos, © 2021, Riot Games. Todos os direitos reservados.</span>
+      <span>© 2021 Riot Games, Inc. Riot Games, League of Legends, Teamfight Tactics, League of Legends: Wild Rift, Legends of Runeterra, Valorant, Riot Forge e qualquer logotipo associado são marcas comerciais, marcas de serviço e/ou marcas registradas da Riot Games, Inc.</span>
+    </div>
+  </div>
+</body>
+
+</html>
